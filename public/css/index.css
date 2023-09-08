@@ -1,0 +1,101 @@
+form{
+    position: absolute;
+    top: 25%;
+    left: 35%;
+}
+
+
+
+.container{
+    background-color: aliceblue;
+    border-radius: 20px;
+    margin: 10px 0;
+    width: 100%;
+    position: absolute;
+    top: 55%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cart{
+    text-align: center;
+    margin: 20px;
+    width: 25%;
+}
+
+.cart img {
+    height: 300px;
+    border-radius: 25px;
+}
+
+
+.cart a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cart h4{
+    color: rgba(163, 165, 71, 0.884);
+    font-style: italic;
+}
+
+
+
+.navitems{
+    position: absolute;
+    top: 40%;
+    background-color: grey;
+    display: flex;
+   
+}
+
+.navitems .navi2{
+    border: none;
+    color: aliceblue;
+    background-color: black;
+    padding: 25px;
+
+}
+
+.dropdown{
+
+    position: absolute;
+    top: 50%;
+    
+    z-index: 1;
+    text-align: center;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+}
+
+.dropdown hr{
+    width: 100%;
+    /* height: 1px; */
+}
+.dropdown a{
+    margin: 2px 0;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: rgb(0, 136, 255);
+}
+
+
+
+.actorcate{
+    left: 8%;
+}
+
+.genrecate{
+    left: 20%;
+}
+
+.yearecate{
+    left: 30%;
+}

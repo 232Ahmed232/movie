@@ -1,0 +1,56 @@
+<%- include('partial/header.ejs') %>
+    <form action="/" method="post">
+        <input type="text" name="search">
+        &nbsp;
+        <button type="submit">Search</button>
+    </form>
+
+    <div class="navitems">
+        <a href="/"><i class="fa-solid fa-house navi2"></i></a>
+        <button class="actor navi2">Actor <i class="fa fa-caret-down"></i></button>
+        <button class="generes navi2">Generes <i class="fa fa-caret-down"></i></button>
+        <button class="years navi2">Year <i class="fa fa-caret-down"></i></button>
+    </div>
+    
+
+    <div class="actorcate dropdown">
+        <a href="/actor/Robert Downey Jr.">Robert Downey Jr.</a>
+        <hr>
+        <a href="/actor/Chris Evans">Chris Evans</a>
+        <hr>
+        <a href="/actor/Christian Bale">Christian Bale</a>
+    </div>
+    <div class="genrecate dropdown">
+        <a href="/genere/Animation">Animation</a>
+        <hr>
+        <a href="/genere/Romance">Romance</a>
+        <hr>
+        <a href="/genere/Action">Action</a>
+        <hr>
+        <a href="/genere/Sci-Fi">Sci-Fi</a>
+    </div>
+    <div class="yearecate dropdown">
+        <a href="/year/2005">2005</a>
+        <hr>
+        <a href="/year/2008">2008</a>
+        <hr>
+        <a href="/year/2014">2014</a>
+        <hr>
+        <a href="/year/2011">2011</a>
+    </div>
+    
+    <div class="container">
+            
+            
+            <% mov.forEach(element => { %>
+                <div class="cart">
+                   
+                    <img src="<%=element.poster%>" alt="">
+                    <h1> <a href="/template/<%= element.title%>"><%= element.title%> </a></h1>
+                    <h4>Rating : <%= element.imdb.rating%></h4>
+                    
+                </div>
+            <% }) %>
+
+    </div>
+<%- include('partial/footer.ejs') %>

@@ -1,0 +1,54 @@
+<%- include('partial/header.ejs') %>
+
+
+<% temp.forEach(element => { %>
+    <div class="nb">
+    <h1>"<%= element.title %>"</h1>
+    <img src="<%= element.poster %>" alt="" srcset="">
+    <p class="plot"><%= element.plot %></p>
+    <h3 >Cast</h3>
+    <% element.cast.forEach(nam => { %>
+            <a href="https://en.wikipedia.org/wiki/<%= nam %>"><h5 class="casth"><%= nam %></h5></a>
+    <% }) %>
+        <h3>Full Plot</h3>
+        <p class="fullplot">
+          <%= element.fullplot %></p>
+        <h3>Genres</h3>
+    <% element.genres.forEach(gen => { %>
+            <a href="/genere/<%= gen %>"><h5 class="casth"><%= gen %></h5></a>
+    <% }) %>
+    <h3>Rating</h3>
+    <h5 class="rat">Imdb Rating : <%= element.imdb.rating %></h5>
+    <h5 class="rat">Imdb Votes: <%= element.imdb.votes %></h5>
+    <h5 class="rat">Rated: <%= element.rated %></h5>
+
+    <h2>Release Year: <%= element.year %></h2>
+    <h3>Writers</h3>
+    <% element.writers.forEach(rit => { %>
+      <h5 class="it"><%= rit %></h5>
+<% }) %>
+<h3>Directors</h3>
+<% element.directors.forEach(dit => { %>
+  <h5 class="it"><%= dit %></h5>
+<% }) %>
+
+    <h3>Awards</h3>
+    <h5 class="awrd">Wins: <%= element.awards.wins %></h5>
+    <h5 class="awrd">Nominations: <%= element.awards.nominations %></h5>
+    <h5 class="awrd"><%= element.awards.text %></h5>
+    <% try { %>
+        <h3>Language: <%= element.languages[0] %></h3>
+      <% } catch (error) { %>
+        <% // Code to handle the error %>
+      <% } %>
+        
+
+    
+    
+
+    <button class="down">Download</button>
+
+    </div>
+    <% }) %>
+
+<%- include('partial/footer.ejs') %>

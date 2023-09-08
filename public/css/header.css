@@ -1,0 +1,28 @@
+nav{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img{
+    height: 50px;
+    margin-left: 15px;
+}
+
+nav .items{
+    display: flex; 
+}
+
+nav .items a{
+    padding: 25px;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav .items a:hover{
+    background-color: aliceblue;
+    color: black;
+}

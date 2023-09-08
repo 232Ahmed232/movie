@@ -1,0 +1,72 @@
+.nb{
+    margin: 10px;
+    text-align: center;
+    background-color: aliceblue;
+    border-radius: 50px;
+}
+
+.nb h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    -webkit-text-stroke: 2px black;
+    -webkit-text-fill-color: rgb(129, 190, 201)
+}
+
+.nb .plot{
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+}
+
+.nb h3{
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nb .casth{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+    font-weight: bold;
+    color: black;
+}
+
+
+.nb .fullplot{
+    margin: 5px;
+    border-radius: 20px;
+    border: 1px dotted black;
+    padding: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #fff;
+    font-weight: bold;
+}
+
+.nb .rat{
+    font-family: monospace;
+    color: goldenrod;
+    font-size: large;
+}
+
+.nb .it{
+    font-family:sans-serif;
+    font-weight: bolder;
+}
+
+.nb .awrd{
+    font-family: monospace;
+    color: rgb(25, 167, 25);
+    font-size: large;
+}
+
+
+.down{
+    margin: 10px 0;
+    padding: 20px;
+    border: none;
+    background-color: aqua;
+    font-size: large;
+    font-weight: bolder;
+    color: #fff;
+    font-family:'Courier New', Courier, monospace;
+    cursor: pointer;
+}
